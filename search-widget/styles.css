@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/originals/8e/18/f8/8e18f8a8be978d951a0ad0b6b9eeb7fe.jpg');
+  background-size: cover;
+  font-family: 'Nerko One', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  overflow: hidden;
+  margin: 0;
+}
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .input {
+  background-color: transparent;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 0px;
+  width: 0px;
+  transition: width 0.3s ease;
+}
+
+::placeholder {
+  color: aliceblue;
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  color: aliceblue;
+  border: 0;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+  color: aliceblue;
+}
+
+.search.active .input {
+  width: 200px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+}
