@@ -5,8 +5,9 @@
 }
 
 body {
-  background-image: url('https://i.pinimg.com/originals/8e/18/f8/8e18f8a8be978d951a0ad0b6b9eeb7fe.jpg');
-  background-size: cover;
+  background: url('https://i.pinimg.com/originals/8e/18/f8/8e18f8a8be978d951a0ad0b6b9eeb7fe.jpg')
+    no-repeat center center/cover;
+
   font-family: 'Nerko One', cursive;
   display: flex;
   flex-direction: column;
