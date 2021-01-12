@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+:root {
+  --border-color: #144fc6;
+  --filled-color: #6ab3f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #43c6ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: antiquewhite;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.cup {
+  background-color: white;
+  border: 3px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 0 0 40px 40px;
+  height: 250px;
+  width: 130px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.cup.cup-big {
+  margin: 10px 0 10px;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cup.cup-small {
+  height: 90px;
+  width: 50px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  margin: 5px;
+}
+
+.cup.cup-small.filled {
+  color: white;
+  background-color: var(--filled-color);
+}
+
+.remaining {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remaining span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remaining small {
+  font-size: 14px;
+}
+
+.percentage {
+  background-color: var(--filled-color);
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+p {
+  text-align: center;
+  margin: 10px;
+}
