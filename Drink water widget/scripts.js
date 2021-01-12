@@ -12,7 +12,7 @@ smallcups.forEach((cup, idx) => {
 
 function highlightCups(idx) {
 
-  if (idx===smallcups.length-1 && smallcups[idx].classList.contains("filled")) idx--;
+  if (idx===smallcups.length-1 && smallcups[idx].classList.contains('filled')) idx--;
     if(smallcups[idx].classList.contains('filled') && !smallcups[idx].nextElementSibling.classList.contains('filled')) {
         idx--
     }
@@ -41,8 +41,8 @@ function updatebigcup() {
   }
   else {
     percentage.style.visibility = 'visible'
-    percentage.style.height = `${filledcups / total * 250}px`
-    percentage.innerText = `${filledcups/total * 100}%`
+    percentage.style.height = `${filledcups / total * 300}px`
+    percentage.innerText = `${filledcups / total * 100}%`
   }
   
   if(filledcups === total){
@@ -51,7 +51,7 @@ function updatebigcup() {
   }
   else{
     remaining.style.visibility = 'visible'
-    quantity.innerText = `${2-(250 * filledcups / 1000)}L `
+    quantity.innerText = `${2-(250 * filledcups / 1000)}L`
   }
 
 }
