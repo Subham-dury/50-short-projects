@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #544a7d;
+  background-image: linear-gradient(45deg, #544a7d 50%, #ffd452 50%);
+
+  font-family: 'Nerko One', cursive;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: 3px solid black;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.fill {
+  background-image: url('https://source.unsplash.com/random/150x150');
+  height: 145px;
+  width: 145px;
+}
+
+.hold {
+  border: white 5px solid;
+}
+
+.hovered {
+  background-color: crimson;
+  border-color: white;
+  border-style: dashed;
+}
