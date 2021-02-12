@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Password Generator</h2>
+    <div class="result">
+      <span class="output" id="output"></span>
+      <button class="btn" id="clipboard">
+        <i class="far fa-clipboard"></i>
+      </button>
+    </div>
+    <div class="filters">
+      <div class="filter">
+        <label for="Password Length">Password Length</label>
+        <input type="number" id="length" min="5" max="10" value="7">
+      </div>
+      <div class="filter">
+        <label for="Checkbox">Uppercase Letters</label>
+        <input type="checkbox" class="uppercase" id="uppercase" checked>
+      </div>
+      <div class="filter">
+        <label for="Checkbox">Lowercase Letters</label>
+        <input type="checkbox"  id="lowercase" checked>
+      </div>
+      <div class="filter">
+        <label for="Checkbox">Numbers</label>
+        <input type="checkbox"  id="number" checked>
+      </div>
+      <div class="filter">
+        <label for="Checkbox">Special Characters</label>
+        <input type="checkbox"  id="special" checked>
+      </div>
+    </div>
+
+    <button class="btn btn-large" id="generate">
+      Generate password
+    </button>
+  </div>
+  
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
