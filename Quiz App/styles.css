@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: url('https://i.pinimg.com/originals/db/34/d4/db34d40b271fb59477621550bf73ea0b.jpg')
+    no-repeat center center/cover;
+  font-family: 'Lexend', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.quiz-container {
+  background: rgba(134, 156, 189, 0.877);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 65vw;
+  overflow: hidden;
+}
+
+.quiz-header {
+  padding: 4rem;
+}
+
+.quiz-header h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.quiz-header ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quiz-header ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.quiz-header ul li label {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button {
+  background-color: darkslateblue;
+  border: none;
+  color: white;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+button:hover {
+  background-color: rgb(23, 18, 59);
+}
+
+button:focus {
+  background-color: rgba(102, 82, 250, 0.541);
+}
